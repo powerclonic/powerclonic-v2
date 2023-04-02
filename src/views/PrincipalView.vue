@@ -116,9 +116,16 @@ export default {
         {
           titulo: "powerclonic.xyz",
           descricao:
-            "O site que você está agora! Utilizei HTML, CSS e o frameork VueJS para fazer ele.",
-          repositorio: "https://github.com/powerclonic/powerclonic-v2",
+            "Meu antigo site! Utilizei HTML, CSS + BootStrap e o framework VueJS nele.",
+          repositorio: "https://github.com/powerclonic/powerclonic.xyz",
           imagem: require("@/assets/images/powerclonicxyz.webp"),
+        },
+        {
+          titulo: "powerclonic.xyz 2.0",
+          descricao:
+            "O site que você está agora! Utilizei HTML, CSS e o framework VueJS para fazer ele.",
+          repositorio: "https://github.com/powerclonic/powerclonic-v2",
+          imagem: require("@/assets/images/powerclonicxyzv2.webp"),
         },
       ],
       contatos: [
