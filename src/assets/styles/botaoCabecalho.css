@@ -1,0 +1,47 @@
+.botao {
+    padding: 2rem 0;
+
+    cursor: pointer;
+}
+
+.labelBotao {
+    letter-spacing: 0.2rem;
+
+    font-weight: bold;
+    font-size: 1.25rem;
+
+    margin: 0;
+
+    position: relative;
+}
+
+.labelBotao::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    height: 2.5px;
+    border-radius: 2px;
+    z-index: -1;
+    background-color: #fff;
+}
+
+.botao:hover .labelBotao::before {
+    background: linear-gradient(
+        90deg,
+        var(--roxo-escuro),
+        var(--amarelo-claro),
+        var(--ciano-claro)
+    );
+}
+
+@media screen and (max-width: 640px){
+  .labelBotao {
+    font-size: 1rem;
+  }
+
+  .botao {
+    padding: 0.5rem;
+  }
+}

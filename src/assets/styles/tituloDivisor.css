@@ -1,0 +1,44 @@
+.divisor {
+  margin: 7.5rem 0 2.5rem;
+
+  display: grid;
+  place-items: center;
+}
+
+.labelDivisor {
+  font-size: 2.25rem;
+  text-align: center;
+  letter-spacing: 1rem;
+
+  width: fit-content;
+
+  position: relative;
+}
+
+.labelDivisor::after {
+  content: "";
+  position: absolute;
+  top: 125%;
+  width: 150%;
+  left: -25%;
+  height: 5px;
+  border-radius: 2px;
+  z-index: -1;
+  background: linear-gradient(
+    90deg,
+    var(--roxo-escuro),
+    var(--amarelo-claro),
+    var(--ciano-claro)
+  );
+}
+
+@media screen and (max-width: 640px){
+  .labelDivisor {
+    font-size: 1.5rem;
+  }
+
+  .labelDivisor::after {
+    width: 120%;
+    left: -10%;
+  }
+}
