@@ -1,0 +1,41 @@
+.card2 {
+    aspect-ratio: 20/2;
+
+    background-color: var(--roxo-escuro);
+
+    border-radius: 0.5rem;
+    
+    display: flex;
+    align-items: center;
+
+    width: 50%;
+    
+    text-decoration: none;
+
+    background-position: 0%;
+    transition: background-position 0.5s ease;
+    color: #fff;
+
+    transition: background-color 1s cubic-bezier(.62,-0.04,1,.5);
+}
+
+.imagemCardContato {
+    height: 100%;
+    aspect-ratio: 1;
+
+    overflow: hidden;
+    margin: 0.5rem;
+}
+
+.imagemCardContato img {
+    height: 100%;
+}
+
+.textoCardContato {
+    margin: 0 0 0 1rem;
+    font-size: 2rem;
+}
+
+.card2:hover {
+    background-color: var(--preto);
+}

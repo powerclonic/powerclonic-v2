@@ -1,0 +1,165 @@
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+
+  background-image: linear-gradient(#00FCF840, transparent);
+
+  padding: 0 5rem;
+}
+
+.tituloCabecalho {
+  font-size: 3rem;
+  position: relative;
+
+  width: fit-content;
+
+  margin: 2rem 0;
+}
+
+.tituloCabecalho:after {
+  content: "";
+  position: absolute;
+  top: 85%;
+  width: 100%;
+  left: 0;
+  height: 5px;
+  border-radius: 2px;
+  z-index: -1;
+  background: linear-gradient(
+    90deg,
+    var(--roxo-escuro),
+    var(--amarelo-claro),
+    var(--ciano-claro)
+  );
+}
+
+.botoesCabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.container {
+  padding: 0 5rem;
+}
+
+.sobreMim {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.apresentacaoSobreMim {
+  width: 65%;
+}
+
+.apresentacaoSobreMim h2 {
+  font-weight: normal;
+}
+
+.apresentacaoSobreMim p {
+  font-size: 1.2rem;
+  text-indent: 2rem;
+  text-justify: distribute;
+  text-align: justify;
+}
+
+.imagemSobreMim {
+  width: 35%;
+
+  display: grid;
+  place-items: center;
+}
+
+.imagemSobreMim figure {
+  width: 75%;
+  margin: 0;
+
+  background-image: linear-gradient(
+    135deg,
+    var(--roxo-escuro),
+    var(--amarelo-claro),
+    var(--ciano-claro)
+  );
+  padding: 0.4rem;
+  border-radius: 2rem;
+}
+
+.imagemSobreMim img {
+  width: 100%;
+
+  border-radius: 2rem;
+}
+
+.projetos,
+.contatos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.cardProjeto {
+  flex-basis: calc(50% - 2rem);
+  margin-bottom: 2rem;
+}
+
+.cardContato {
+  flex-basis: calc(33.33% - 1rem);
+  margin-bottom: 2rem;
+}
+
+.copyright {
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .cardProjeto {
+    flex-basis: 75%;
+  }
+
+  .projetos {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 902px) {
+  .cabecalho,
+  .sobreMim {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .container {
+    padding: 0 2rem;
+  }
+
+  .apresentacaoSobreMim {
+    width: 100%;
+  }
+
+  .imagemSobreMim {
+    width: 50%;
+  }
+  .cardProjeto,
+  .cardContato {
+    flex-basis: 100%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .botoesCabecalho {
+    flex-direction: column;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .imagemSobreMim {
+    width: 100%;
+  }
+  
+}
